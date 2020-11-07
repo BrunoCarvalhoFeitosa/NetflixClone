@@ -25,12 +25,6 @@ const HeroBanner = ({ item }) => {
     genres.push(item.genres[i].name);
   }
 
-    const email = localStorage.getItem('emailUser');
-    console.log('email Storage', email);
-    api.get(`/user/15`).then(response => {
-      console.log('resp', response);
-    })
-
   return (
     <HeroBannerContainer style={{
       backgroundSize: 'cover',
